@@ -1,7 +1,11 @@
-import React from 'react'
+import {Monster} from '../../App'
 import  './card.style.css'
 
-export const Card = ({monstera}) => {
+type CardProps = {
+	monstera: Monster
+}
+
+export const Card = ({monstera}: CardProps) => {
 	const {id, name, email} = monstera
   return (
 		<div className='card-container' >
